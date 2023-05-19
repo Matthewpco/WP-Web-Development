@@ -1,0 +1,1 @@
+.portfolio-wrapper{display:flex;flex-wrap:wrap}.portfolio-link{display:flex;flex-wrap:wrap;flex:0 0 33.3%}.portfolio-item{margin:1%}.portfolio-item img{width:100%;height:100%}@media only screen and (max-width:767px){.portfolio-link{flex:0 0 100%}}@media only screen and (min-width:768px) and (max-width:1023px){}

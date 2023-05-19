@@ -1,0 +1,26 @@
+.housing-calculator-form {
+	padding: 2%;
+	font-family: Arial, sans-serif;
+}
+.housing-calculator-form label {
+	display: block;
+	margin-bottom: 0.5em;
+}
+.housing-calculator-form input[type="text"],
+.housing-calculator-form select {
+	padding: 0.5em 1.5em;
+	margin-bottom: 1em;
+	border-radius: 3px;
+	border: 1px solid #ccc;
+}
+.housing-calculator-form input[type="submit"] {
+	padding: 0.5em 1em;
+	background-color: #4CAF50;
+	color: white;
+	border: none;
+	border-radius: 3px;
+	cursor: pointer;
+}
+.housing-calculator-form input[type="submit"]:hover {
+	background-color: #3e8e41;
+}

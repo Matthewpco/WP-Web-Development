@@ -1,0 +1,183 @@
+/*
+Theme Name: WordPress Web Development
+Theme URI: https://github.com/Matthewpco/wpwebdev-alpha
+Author: Gary Matthew Payne
+Author URI: https://wpwebdevelopment.com/
+Description: A WP 6.2 updated theme with 2023 parent
+Requires at least: 5.8
+Tested up to: 5.9
+Requires PHP: 5.7
+Version: 0.0.1
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Template: twentytwentythree
+Text Domain: wordpresswebdevelopment
+Tags: blog, e-commerce, portfolio, one-column, wide-blocks, accessibility-ready, block-patterns, block-styles, custom-colors, custom-logo, custom-menu, editor-style, featured-images, full-site-editing, rtl-language-support, sticky-post, threaded-comments, translation-ready
+*/
+
+
+/* Basic styles */
+
+a:link {
+  color: #6a5eff;
+}
+
+.home {
+	background-color: #f4f5f5;
+}
+
+footer {
+	margin: 0!important;
+}
+
+a:visited {
+
+}
+
+.custom-border-bottom {
+	border-bottom: 2px solid #f53350;
+}
+/* Navigation */
+
+
+.wp-site-blocks {
+	padding-top: 0!important;
+	padding-bottom: 0!important;
+}
+
+.wp-site-blocks .custom-nav {
+	z-index: 10;
+	margin-bottom: -130px!important;
+	position: relative;
+}
+
+
+.custom-separator {
+	border-left: 1px solid black;
+    padding-left: 5%;
+}
+
+.portfolio-template .has-global-padding {
+	padding: 0;
+}
+
+.portfolio-template .portfolio-image {
+	max-width: 100%;
+}
+
+.home .is-layout-flex {
+	gap: 0;
+}
+
+.home .detail-column {
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.img-slide-left, .img-slide-right {
+	visibility: hidden;
+}
+
+
+/* Standard classes for general use */
+
+
+.padding-right-5 {
+	padding-right: 5%;
+}
+
+
+
+/* Keyframs animation */
+
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.skills-section figure.animate-left {
+	animation: 1s ease-out 0s 1 slideInFromLeft;
+}
+
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.skills-section figure.animate-right {
+	animation: 1s ease-out 0s 1 slideInFromRight;
+}
+
+@media only screen and (max-width: 767px) {
+  /* Styles for mobile devices */
+	.home h1,.home h2,.home h3 {
+		font-size: 1.5rem!important;
+	}
+	
+	.home-section-3 {
+		padding: 3%!important;
+		text-align: center;
+	}
+	
+	.custom-separator {
+		border-left: none;
+		padding: 3% 0;
+	}
+	
+	.home-section-5 {
+		flex-direction: column-reverse;
+	}
+	
+	
+	/* Footer template part */
+	.footer-section-1  {
+		padding-left: 5%!important;
+		padding-right: 5%!important;
+	}
+	
+	.footer-section-3 {
+		padding-left: 0!important;
+		text-align: center!important;
+		align-items: center!important;
+	}
+	
+	.footer-section-4 {
+		justify-content: center!important;
+		margin: 5% 0;
+	}
+	
+	.footer-section-2 div {
+		justify-content: center!important;
+	}
+	
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  /* Styles for tablet devices */
+	footer .wp-container-24 {
+		padding-left: 0!important;
+	}
+	
+	footer .wp-container-26 {
+		justify-content: center!important;
+		flex: 0 0 100%;
+	}
+	
+	.skills-section h3 {
+		font-size: 1.5rem;
+	}
+	
+	.skills-section ul {
+		font-size: .9rem;
+	}
+}

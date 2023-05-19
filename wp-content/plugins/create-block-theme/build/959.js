@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkcreate_block_theme=self.webpackChunkcreate_block_theme||[]).push([[959],{5959:(e,s,t)=>{t.r(s),t.d(s,{CFF:()=>r});var c=t(2592),a=t(7047);class r extends c.x{constructor(e,s){const{p:t}=super(e,s);(0,a.Z)(this,"data",(()=>t.readBytes()))}}}}]);
